@@ -11,7 +11,7 @@
                     </div>
                     <div class="col-12 col-lg-10 mx-auto">
                         <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;">
-                            <center><img src="images/1.png" class="img-fluid" alt=""></center>
+                            <img src="images/1.png" class="img-fluid" alt="Hero Image">
                         </div>
                     </div>
                 </div>
