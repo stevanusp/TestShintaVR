@@ -22,7 +22,7 @@ export default {
       { rel: 'stylesheet', href: '/css/bootstrap.min.css' }
     ],
     script: [
-      { src: "/js/bootstrap.bundle.min.js", type: "text/javascript"}
+      { src: "/js/bootstrap.bundle.min.js", type: "text/javascript" }
     ]
   },
 
@@ -49,12 +49,12 @@ export default {
 
   firebase: {
     config: {
-      apiKey: "AIzaSyCdLkrrxsweA-Lq_KtX9dGh9mmyruDMXL4",
-      authDomain: "testshintavr.firebaseapp.com",
-      projectId: "testshintavr",
-      storageBucket: "testshintavr.appspot.com",
-      messagingSenderId: "665174567790",
-      appId: "1:665174567790:web:bd283567027dfd88956f7f"
+      apiKey: "AIzaSyCci2FTVD2hwqxJiTlTEd0tfQ8003QdiaI",
+      authDomain: "testshintavr-ed687.firebaseapp.com",
+      projectId: "testshintavr-ed687",
+      storageBucket: "testshintavr-ed687.appspot.com",
+      messagingSenderId: "679884745856",
+      appId: "1:679884745856:web:f9fc00e0f1a126b1b6ca65"
     },
     services: {
       auth: {
