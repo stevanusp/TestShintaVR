@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'test',
+    title: 'Scola',
     htmlAttrs: {
       lang: 'en',
     },
@@ -12,20 +12,24 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { 
-        rel: 'icon', 
-        type: 'image/x-icon', 
-        href: '/favicon.ico' 
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
       },
-] 
+    ],
+    link: [
+      { rel: 'stylesheet', href: '/css/bootstrap.min.css' }
+    ],
+    script: [
+      { src: "/js/bootstrap.bundle.min.js", type: "text/javascript"}
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['~/static/css/bootstrap.min.css'],
-  js: ['~/static/js/bootstrap.bundle.min.js'],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  //plugins: ['~/plugins/firebase.js'],
   plugins: [],
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -40,7 +44,25 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/firebase'
   ],
+
+  firebase: {
+    config: {
+      apiKey: "AIzaSyCdLkrrxsweA-Lq_KtX9dGh9mmyruDMXL4",
+      authDomain: "testshintavr.firebaseapp.com",
+      projectId: "testshintavr",
+      storageBucket: "testshintavr.appspot.com",
+      messagingSenderId: "665174567790",
+      appId: "1:665174567790:web:bd283567027dfd88956f7f"
+    },
+    services: {
+      auth: {
+        onAuthStateChangedMutation: 'ON_AUTH_STATE_CHANGED_MUTATION',
+        onAuthStateChangedAction: 'onAuthStateChangedAction',
+      },
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
