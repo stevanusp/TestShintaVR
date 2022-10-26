@@ -5,7 +5,7 @@
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-md-8 col-xl-6 text-center mx-auto">
-                        <h2>Log in</h2>
+                        <h2>Log in <span v-if="currentUser">{{currentUser.displayName}}</span></h2>
                         <p class="w-lg-50"></p>
                     </div>
                 </div>
@@ -33,6 +33,11 @@
 import LogIn from '../components/login.vue';
 export default {
     name: 'Signin',
-    components:{LogIn}
+    components:{LogIn},
+    computed:{
+        currentUser(){
+            return this.$store.state.user
+        }
+    }
 }
 </script>

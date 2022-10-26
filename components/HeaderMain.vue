@@ -11,7 +11,7 @@
                 </button>
                 <div id="navcol-2" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="#">First Item</a></li>
+                        <li class="nav-item"><NuxtLink to="/DashBoard" class="nav-link active" href="#">Dashboard</NuxtLink></li>
                         <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
                     </ul>
