@@ -17,11 +17,11 @@ export default {
                 this.$fireModule.auth.EmailAuthProvider.PROVIDER_ID,
                 this.$fireModule.auth.GoogleAuthProvider.PROVIDER_ID,
             ],
-            signInSuccessUrl: "/",
+            signInSuccessUrl: "/Dashboard",
             callbacks: {
                 signInSuccessWithAuthResult() {
                     console.log("Successfully signed in");
-                    window.location = "/";
+                    window.location = "/Dashboard";
                 },
             },
         };

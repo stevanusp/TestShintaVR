@@ -11,11 +11,11 @@
                 </button>
                 <div id="navcol-2" class="collapse navbar-collapse">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><NuxtLink to="/DashBoard" class="nav-link active" href="#">Dashboard</NuxtLink></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
+                        <li class="nav-item"><NuxtLink to="/DashBoard" class="nav-link active">Dashboard</NuxtLink></li>
+                        <li class="nav-item"><a class="nav-link">Second Item</a></li>
+                        <li class="nav-item"><a class="nav-link">Third Item</a></li>
                     </ul>
-                        <NuxtLink to="/Signin" class="btn btn-light ms-md-2" role="button">Sign in</NuxtLink>
+                        <button class="btn btn-light ms-md-2" role="button" v-on:click="SignOut()">Sign Out</button>
                         <NuxtLink to="/signup" class="btn btn-primary ms-md-2" role="button">Sign Up</NuxtLink>
                 </div>
             </div>
@@ -25,6 +25,12 @@
 
 <script>
 export default {
-    name: 'HeaderMain',
+    name: 'HeaderDashboard',
+    methods: {
+        SignOut(){
+        this.$fire.auth.signOut();
+        window.location="/signin"
+        }
+    },
 }
 </script>
